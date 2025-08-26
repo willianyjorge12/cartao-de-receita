@@ -1,0 +1,137 @@
+
+
+/* 1. ESTILOS GERAIS PARA A PÁGINA */
+
+/* Idênticos ao projeto anterior, apenas para criar um "palco" para o nosso card. */
+
+body {
+
+    font-family: 'Georgia', serif; /* Uma fonte um pouco mais elegante para receitas */
+
+    background-color: #f5f5f5;
+
+    color: #333;
+
+ 
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    margin: 0;
+
+}
+
+ 
+
+ 
+
+/* 2. ESTILOS DO CARD DE RECEITA */
+
+.recipe-card {
+
+    width: 350px; /* Largura fixa para o nosso card */
+
+    background-color: #ffffff;
+
+    border-radius: 15px; /* Cantos mais arredondados para um visual suave */
+
+   
+
+    /* A sombra é um pouco mais sutil aqui */
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+   
+
+    /* A MÁGICA PARA CANTOS ARREDONDADOS NA IMAGEM:
+
+     * Esta propriedade "corta" qualquer conteúdo filho (como a nossa imagem)
+
+     * que tente "vazar" para fora dos cantos arredondados do card.
+
+     */
+
+    overflow: hidden;
+
+}
+
+ 
+
+ 
+
+/* 3. ESTILOS DA IMAGEM - NOSSO FOCO PRINCIPAL */
+
+.recipe-image {
+
+    /* FAZ A IMAGEM SER RESPONSIVA AO SEU CONTAINER:
+
+     * A imagem ocupará 100% da largura do seu elemento pai (o .recipe-card).
+
+     * Sua altura se ajustará automaticamente para manter a proporção.
+
+     */
+
+    width: 100%;
+
+   
+
+    /* Garante que o navegador renderize a imagem como um bloco, removendo
+
+     * pequenos espaços que podem aparecer abaixo dela. É uma boa prática.
+
+     */
+
+    display: block;
+
+}
+
+ 
+
+ 
+
+/* 4. ESTILOS PARA O CONTEÚDO DE TEXTO */
+
+.recipe-content {
+
+    /* Usamos o padding aqui para dar um respiro INTERNO para todo o texto,
+
+     * afastando-o das bordas do card.
+
+     */
+
+    padding: 25px;
+
+}
+
+ 
+
+.recipe-title {
+
+    font-size: 1.5rem; /* 24px */
+
+    color: #4a4a4a;
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+
+}
+
+ 
+
+.recipe-description {
+
+    font-size: 1rem; /* 16px */
+
+    line-height: 1.5; /* Espaçamento entre as linhas do parágrafo */
+
+    color: #666;
+
+    margin-bottom: 0; /* Remove a margem de baixo do último elemento */
+
+}
